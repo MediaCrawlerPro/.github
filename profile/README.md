@@ -49,7 +49,12 @@
 > MediaCrawler开源超过一年了，相信该仓库帮过不少朋友低门槛的学习和了解爬虫。维护真的耗费了大量精力和人力<br>
 > 所以Pro版本不会开源，可以订阅Pro版本让我更加有动力去更新。<br>
 > 从MediaCrawler到Pro版本发生了一些底层逻辑转变，可以从中学习代码的一些设计思路，帮助你更好的理解代码的设计和实现。<br>
-咨询pro版本联系微信：yzglan，备注：pro版本
+
+扫描下方我的个人微信，备注：pro版本（如果图片展示不出来，可以直接添加我的微信号：yzglan）
+<div style="max-width: 200px">  
+<p><img alt="relakkes_wechat" src="../relakkes_weichat.JPG" style="width: 200px;height: 100%" ></p>
+</div>
+
 
 
 ## 源代码仓库列表：

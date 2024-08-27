@@ -62,9 +62,6 @@
 </div>
 仅针对想学习Pro版本源码实现的用户，如果是公司或者商业化盈利性质的就不要加我了，谢谢🙏
 
-## Pro版本视频使用教程地址
-[B站：MediaCrawlerPro使用教程](https://space.bilibili.com/434377496/channel/series)
-
 ## 源代码仓库列表：
 `MediaCrawlerPro-Python`和`MediaCrawlerPro-SignSrv`
 

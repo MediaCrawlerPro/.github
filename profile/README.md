@@ -49,8 +49,8 @@
 > 
 > 代码设计拓展性强，可以自己扩展更多的爬虫平台，更多的数据存储方式，相信对你架构这种爬虫代码有所帮助。
 
-扫描下方我的个人微信，备注：pro版本（如果图片展示不出来，可以直接添加我的微信号：yzglan）
-> 如果添加我微信显示频繁添加的话，可以尝试添加这个微信号：relakkes
+扫描下方我的个人微信，备注：pro版本（如果图片展示不出来，可以直接添加我的微信号：relakkes）
+> 如果添加我微信显示频繁添加的话，可以尝试添加这个微信号：relakkes2
 
 <div style="max-width: 200px">  
 <p><img alt="relakkes_wechat" src="../relakkes_weichat.JPG" style="width: 200px;height: 100%" ></p>

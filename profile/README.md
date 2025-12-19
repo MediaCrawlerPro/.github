@@ -68,7 +68,7 @@
 ![img.png](img.png)
 ![img_1.png](img_1.png)
 
-## 待办事项
+## 更新日志
 - [x] 账号池管理 & 支持excel和mysql两种方式
 - [x] 小红书爬虫重构
 - [x] 微博爬虫重构

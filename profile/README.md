@@ -28,6 +28,17 @@
 - 新增自媒体平台视频下载器桌面端UI下载项目（适合全栈项目学习）。
 - 支持多个平台的首页信息流推荐（HomeFeed）
 
+### 🆕 新上线：ContentRemixAgent - AI内容二创助手
+基于 **LangGraph Agent** 架构的内容二次创作助手，帮助创作者快速分析爆款内容、提取创作灵感。
+
+核心功能：
+- **多平台内容解析**：支持小红书、抖音、B站、快手等平台链接解析
+- **视频转文字**：自动提取视频音频并转录为文字
+- **爆款元素拆解**：AI 分析内容结构、选题技巧、情绪价值等爆款因素
+- **二创灵感生成**：基于分析结果生成个性化的创作建议
+
+技术栈：FastAPI + LangGraph + React + TailwindCSS
+
 ## 功能列表
 | 平台 | 断点续爬 | 关键词搜索 | 指定帖子ID爬取 | 二级评论 | 创作者主页 | 首页推荐信息流 |账号池+IP代理池 | 
 |----|------|-------|----------|------|-------|--------|-----------|
@@ -71,6 +82,7 @@
 - 🎯 **MediaCrawlerPro-SignSrv**: 爬虫JS签名逻辑单独抽出来作为最底层依赖服务.
 - 🔗 **MediaCrawlerPro-Downloader**: 新开发的自媒体平台视频（图片）下载器，一个全栈项目，包含前端+后端+爬虫，适合学习全栈开发.
 - 🛠️ **MediaCrawlerPro-Golang**: Golang语言版本，目前实现了最基本的xhs流程，开发中 .
+- 🤖 **MediaCrawlerPro-ContentRemixAgent**: AI驱动的内容二次创作助手，基于LangGraph Agent架构，支持多平台内容分析、视频转文字、爆款元素拆解和二创灵感生成.
 
 ### MediaCrawlerPro中目录结构说明
 
@@ -531,12 +543,99 @@
 └── project_tree.md                                   # 项目结构说明
 ```
 </details>
+<details>
+<summary>🤖 <strong>MediaCrawlerPro-ContentRemixAgent目录结构</strong></summary>
 
+```tree
+.
+├── backend                                          # FastAPI后端 + LangGraph Agent
+│   ├── app                                          # 应用主目录
+│   │   ├── agent                                    # LangGraph Agent核心
+│   │   │   ├── graph.py                             # Agent工作流图定义
+│   │   │   ├── nodes.py                             # 工作流节点实现
+│   │   │   ├── state.py                             # Agent状态定义
+│   │   │   └── tools.py                             # Agent工具集
+│   │   ├── api                                      # API路由
+│   │   │   ├── routes                               # 路由模块
+│   │   │   │   ├── content.py                       # 内容分析API
+│   │   │   │   ├── remix.py                         # 二创生成API
+│   │   │   │   └── transcript.py                    # 视频转文字API
+│   │   │   └── deps.py                              # 依赖注入
+│   │   ├── core                                     # 核心配置
+│   │   │   ├── config.py                            # 应用配置
+│   │   │   └── logging.py                           # 日志配置
+│   │   ├── models                                   # 数据模型
+│   │   │   ├── content.py                           # 内容模型
+│   │   │   └── remix.py                             # 二创模型
+│   │   ├── schemas                                  # Pydantic模式
+│   │   │   ├── content.py                           # 内容请求/响应
+│   │   │   └── remix.py                             # 二创请求/响应
+│   │   ├── services                                 # 业务服务
+│   │   │   ├── content_analyzer.py                  # 内容分析服务
+│   │   │   ├── element_extractor.py                 # 爆款元素提取
+│   │   │   ├── platform_fetcher.py                  # 多平台内容获取
+│   │   │   ├── remix_generator.py                   # 二创灵感生成
+│   │   │   └── transcript_service.py                # 视频转文字服务
+│   │   └── main.py                                  # FastAPI应用入口
+│   ├── tests                                        # 测试目录
+│   │   ├── test_agent.py                            # Agent测试
+│   │   └── test_services.py                         # 服务测试
+│   ├── Dockerfile                                   # Docker构建文件
+│   ├── pyproject.toml                               # 项目配置
+│   └── requirements.txt                             # Python依赖
+├── frontend                                         # React SPA前端
+│   ├── src                                          # 源码目录
+│   │   ├── components                               # React组件
+│   │   │   ├── ContentInput.tsx                     # 内容输入组件
+│   │   │   ├── ElementDisplay.tsx                   # 元素展示组件
+│   │   │   ├── RemixSuggestions.tsx                 # 二创建议组件
+│   │   │   └── TranscriptViewer.tsx                 # 转写结果查看
+│   │   ├── hooks                                    # 自定义Hooks
+│   │   │   └── useAgent.ts                          # Agent交互Hook
+│   │   ├── pages                                    # 页面组件
+│   │   │   ├── AnalyzePage.tsx                      # 内容分析页
+│   │   │   ├── HomePage.tsx                         # 首页
+│   │   │   └── RemixPage.tsx                        # 二创生成页
+│   │   ├── services                                 # API服务
+│   │   │   └── api.ts                               # API客户端
+│   │   ├── App.tsx                                  # 应用根组件
+│   │   └── main.tsx                                 # 入口文件
+│   ├── package.json                                 # 项目配置
+│   └── vite.config.ts                               # Vite配置
+├── docker-compose.yaml                              # Docker编排配置
+├── LICENSE                                          # 开源协议
+└── README.md                                        # 项目说明
+```
+
+</details>
+
+### MediaCrawlerPro-ContentRemixAgent UI截图
+> AI驱动的内容二次创作助手，支持多平台内容分析、爆款元素拆解
+
+<table>
+  <tr>
+    <td><img src="img_11.png" alt="首页" width="400"></td>
+    <td><img src="img_6.png" alt="分析处理过程" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="img_7.png" alt="分析结果展示" width="400"></td>
+    <td><img src="img_8.png" alt="深度拆解报告" width="400"></td>
+  </tr>
+  <tr>
+    <td><img src="img_9.png" alt="分析模式管理" width="400"></td>
+    <td><img src="img_10.png" alt="大模型配置" width="400"></td>
+  </tr>
+</table>
 
 ### MediaCrawlerPro-Downloader视频下载器UI截图
 > 前端：electorn + vue3 + ts + vite + elementui-plus。后端：Python+Tornado+Httpx+Pydantic
-![img.png](img.png)
-![img_1.png](img_1.png)
+
+<table>
+  <tr>
+    <td><img src="img.png" alt="下载器截图1" width="400"></td>
+    <td><img src="img_1.png" alt="下载器截图2" width="400"></td>
+  </tr>
+</table>
 
 
 ## 更新日志

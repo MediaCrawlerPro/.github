@@ -70,8 +70,12 @@
       <b>个人微信</b>
     </td>
     <td align="center">
-      <img alt="企业微信" src="../weichat3.jpg" width="200"><br>
+      <img alt="个人微信2" src="../weichat3.jpg" width="200"><br>
       <b>个人微信2（备用）</b>
+    </td>
+    <td align="center">
+      <img alt="企业微信" src="../QIWEI.png" width="200"><br>
+      <b>企业微信（备用）</b>
     </td>
   </tr>
 </table>

@@ -80,11 +80,21 @@
   </tr>
 </table>
 
+## 🤖 AI Agent Skill 安装（OpenClaw 🦞 / Claude Code）
+
+MediaCrawlerPro 支持以 **Skill** 的形式安装到 AI Coding Agent 中，让 Agent 具备自媒体数据爬取能力，对 Agent 说句话就能自动爬取数据。
+
+支持的 Agent 平台：
+- **[OpenClaw](https://openclaw.com/) 🦞** — 一键安装 Skill
+- **Claude Code** — 复制到 `~/.claude/skills/` 目录
+- **Cursor / Windsurf** — 复制到项目规则目录
+
 ## Pro源代码仓库学习列表
 
 - 🧹 **MediaCrawlerPro-Python**: 开源项目MediaCrawler的重构，移除playwright、增加多账号IP代理、代码优化.
 - 🎯 **MediaCrawlerPro-SignSrv**: 爬虫JS签名逻辑单独抽出来作为最底层依赖服务.
 - 🔗 **MediaCrawlerPro-Downloader**: 新开发的自媒体平台视频（图片）下载器，一个全栈项目，包含前端+后端+爬虫，适合学习全栈开发.
+- 🍪 **MediaCrawlerPro-CookieBridge**: Chrome Extension + Server，自动同步浏览器 Cookie，告别手动复制粘贴.
 - 🛠️ **MediaCrawlerPro-Golang**: Golang语言版本，目前实现了最基本的xhs流程，开发中 .
 - 🤖 **MediaCrawlerPro-ContentRemixAgent**: AI驱动的内容二次创作助手，基于LangGraph Agent架构，支持多平台内容分析、视频转文字、爆款元素拆解和二创灵感生成.
 

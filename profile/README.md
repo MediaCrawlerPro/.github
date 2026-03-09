@@ -33,7 +33,7 @@
 MediaCrawlerPro 支持以 **Skill** 的形式安装到 AI Coding Agent 中，让 Agent 具备自媒体数据爬取能力，对 Agent 说句话就能自动爬取数据。
 
 支持的 Agent 平台：
-- **[OpenClaw](https://openclaw.com/) 🦞** — 一键安装 Skill
+- **[OpenClaw](https://openclaw.ai/) 🦞** — 一键安装 Skill
 - **Claude Code** — 复制到 `~/.claude/skills/` 目录
 - **Cursor / Windsurf** — 复制到项目规则目录
 

@@ -3,6 +3,8 @@
 > 
 > 点击查看更为详细的免责声明。[点击跳转](#disclaimer)
 
+**📌 快速导航：** [项目介绍](#项目介绍) · [AI Agent Skill](#-ai-agent-skill-安装openclaw---claude-code) · [功能列表](#功能列表) · [获取访问权限](#获取pro版本的访问权限) · [仓库列表](#pro源代码仓库学习列表) · [更新日志](#更新日志)
+
 ## MediaCrawler Pro版本诞生的背景
 [MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)这个项目开源至今获得了大量的关注，同时也暴露出来了一系列问题，比如：
 - 能否支持多账号？

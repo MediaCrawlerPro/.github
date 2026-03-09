@@ -28,6 +28,15 @@
 - 新增自媒体平台视频下载器桌面端UI下载项目（适合全栈项目学习）。
 - 支持多个平台的首页信息流推荐（HomeFeed）
 
+### 🤖 AI Agent Skill 安装（OpenClaw 🦞 / Claude Code）
+
+MediaCrawlerPro 支持以 **Skill** 的形式安装到 AI Coding Agent 中，让 Agent 具备自媒体数据爬取能力，对 Agent 说句话就能自动爬取数据。
+
+支持的 Agent 平台：
+- **[OpenClaw](https://openclaw.com/) 🦞** — 一键安装 Skill
+- **Claude Code** — 复制到 `~/.claude/skills/` 目录
+- **Cursor / Windsurf** — 复制到项目规则目录
+
 ### 🆕 新上线：ContentRemixAgent - AI内容二创助手
 基于 **LangGraph Agent** 架构的内容二次创作助手，帮助创作者快速分析爆款内容、提取创作灵感。
 
@@ -79,15 +88,6 @@
     </td>
   </tr>
 </table>
-
-## 🤖 AI Agent Skill 安装（OpenClaw 🦞 / Claude Code）
-
-MediaCrawlerPro 支持以 **Skill** 的形式安装到 AI Coding Agent 中，让 Agent 具备自媒体数据爬取能力，对 Agent 说句话就能自动爬取数据。
-
-支持的 Agent 平台：
-- **[OpenClaw](https://openclaw.com/) 🦞** — 一键安装 Skill
-- **Claude Code** — 复制到 `~/.claude/skills/` 目录
-- **Cursor / Windsurf** — 复制到项目规则目录
 
 ## Pro源代码仓库学习列表
 

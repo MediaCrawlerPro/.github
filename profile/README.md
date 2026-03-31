@@ -39,7 +39,9 @@ MediaCrawlerPro 支持以 **Skill** 的形式安装到 AI Coding Agent 中，让
 - **Claude Code** — 复制到 `~/.claude/skills/` 目录
 - **Cursor / Windsurf** — 复制到项目规则目录
 
-### 🆕 新上线：ContentRemixAgent - AI内容二创助手
+<details>
+<summary><b>🆕 新上线：ContentRemixAgent - AI内容二创助手</b></summary>
+
 基于 **LangGraph Agent** 架构的内容二次创作助手，帮助创作者快速分析爆款内容、提取创作灵感。
 
 核心功能：
@@ -49,6 +51,22 @@ MediaCrawlerPro 支持以 **Skill** 的形式安装到 AI Coding Agent 中，让
 - **二创灵感生成**：基于分析结果生成个性化的创作建议
 
 技术栈：FastAPI + LangGraph + React + TailwindCSS
+</details>
+
+<details>
+<summary><b>🎨 附赠：PicTacticAgent - AI智能图片生成工具</b></summary>
+
+基于 **LangGraph** 多轮迭代工作流的图片生成工具，彻底解决文生图"抽卡"问题。
+
+同样支持以 **Skill** 形式安装到 **[OpenClaw](https://openclaw.ai/) 🦞** 和 **Claude Code** 中，让 AI Agent 一句话就能生成高质量图片。
+
+核心功能：
+- **OpenClaw / Claude Code Skill 集成**：安装 Skill 后，对 Agent 说"帮我生成一张封面图"即可自动调用
+- **多轮迭代生成**：自动评估 + 迭代优化，告别手动"抽卡"
+- **199条精选模板库**：经 Vision LLM 锦标赛筛选的高质量提示词模板
+
+技术栈：FastAPI + LangGraph + React 19 + TailwindCSS 4，支持 Web / CLI / Skill 三种使用方式
+</details>
 
 ## 功能列表
 | 平台 | 断点续爬 | 关键词搜索 | 指定帖子ID爬取 | 二级评论 | 创作者主页 | 首页推荐信息流 |账号池+IP代理池 | 
@@ -99,6 +117,7 @@ MediaCrawlerPro 支持以 **Skill** 的形式安装到 AI Coding Agent 中，让
 - 🍪 **MediaCrawlerPro-CookieBridge**: Chrome Extension + Server，自动同步浏览器 Cookie，告别手动复制粘贴.
 - 🛠️ **MediaCrawlerPro-Golang**: Golang语言版本，目前实现了最基本的xhs流程，开发中 .
 - 🤖 **MediaCrawlerPro-ContentRemixAgent**: AI驱动的内容二次创作助手，基于LangGraph Agent架构，支持多平台内容分析、视频转文字、爆款元素拆解和二创灵感生成.
+- 🎨 **PicTacticAgent**: AI智能图片生成工具，支持 OpenClaw / Claude Code Skill 集成，基于LangGraph多轮迭代工作流，内置199条精选模板库，告别文生图"抽卡".
 
 ### MediaCrawlerPro-ContentRemixAgent UI截图
 > AI驱动的内容二次创作助手，支持多平台内容分析、爆款元素拆解
@@ -125,6 +144,16 @@ MediaCrawlerPro 支持以 **Skill** 的形式安装到 AI Coding Agent 中，让
   <tr>
     <td><img src="img.png" alt="下载器截图1" width="400"></td>
     <td><img src="img_1.png" alt="下载器截图2" width="400"></td>
+  </tr>
+</table>
+
+### PicTacticAgent AI图片生成工具截图
+> AI智能图片生成，多轮迭代自动优化，内置精选模板库
+
+<table>
+  <tr>
+    <td><img src="pictactic_workspace.png" alt="工作台 — 生成+评分+历史" width="400"></td>
+    <td><img src="pictactic_templates2.png" alt="模板库 — 199条精选提示词" width="400"></td>
   </tr>
 </table>
 

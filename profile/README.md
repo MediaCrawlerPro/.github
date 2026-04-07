@@ -19,7 +19,7 @@
 
 ## 项目介绍
 ### [MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)的Pro版本python实现
-**小红书爬虫**，**抖音爬虫**， **快手爬虫**， **B站爬虫**， **微博爬虫**，**百度贴吧**，**知乎爬虫**...。
+**小红书爬虫**，**抖音爬虫**， **快手爬虫**， **B站爬虫**， **微博爬虫**，**知乎爬虫**...。
 
 支持多种平台的爬虫，支持多种数据的爬取，支持多种数据的存储，最重要的**完美支持多账号+IP代理池，让你的爬虫更加稳定**。
 相较于MediaCrawler，Pro版本最大的变化：
@@ -40,15 +40,15 @@ MediaCrawlerPro 支持以 **Skill** 的形式安装到 AI Coding Agent 中，让
 - **Cursor / Windsurf** — 复制到项目规则目录
 
 <details>
-<summary><b>🆕 新上线：ContentRemixAgent - AI内容二创助手</b></summary>
+<summary><b>🆕 新上线：ContentRemixAgent - AI内容分析Agent</b></summary>
 
-基于 **LangGraph Agent** 架构的内容二次创作助手，帮助创作者快速分析爆款内容、提取创作灵感。
+基于 **LangGraph Agent** 架构的内容分析工具，帮助创作者快速分析爆款内容、提取创作灵感。
 
 核心功能：
 - **多平台内容解析**：支持小红书、抖音、B站、快手等平台链接解析
 - **视频转文字**：自动提取视频音频并转录为文字
 - **爆款元素拆解**：AI 分析内容结构、选题技巧、情绪价值等爆款因素
-- **二创灵感生成**：基于分析结果生成个性化的创作建议
+- **分析报告生成**：基于分析结果生成结构化的内容拆解报告
 
 技术栈：FastAPI + LangGraph + React + TailwindCSS
 </details>
@@ -77,7 +77,6 @@ MediaCrawlerPro 支持以 **Skill** 的形式安装到 AI Coding Agent 中，让
 | B 站 | ✅    | ✅     | ✅        | ✅    | ✅     | ✅      | ✅         |
 | 知乎 | ✅     | ✅     | ✅        | ✅    | ✅     | ✅      |✅         |
 | 微博 | ✅    | ✅     | ✅        | ✅    | ✅     | ❌      | ✅         |
-| 贴吧 | ✅    | ✅     | ✅        | ✅    | ✅     | ❌       | ✅         |
 
 
 
@@ -116,11 +115,11 @@ MediaCrawlerPro 支持以 **Skill** 的形式安装到 AI Coding Agent 中，让
 - 🔗 **MediaCrawlerPro-Downloader**: 新开发的自媒体平台视频（图片）下载器，一个全栈项目，包含前端+后端+爬虫，适合学习全栈开发.
 - 🍪 **MediaCrawlerPro-CookieBridge**: Chrome Extension + Server，自动同步浏览器 Cookie，告别手动复制粘贴.
 - 🛠️ **MediaCrawlerPro-Golang**: Golang语言版本，目前实现了最基本的xhs流程，开发中 .
-- 🤖 **MediaCrawlerPro-ContentRemixAgent**: AI驱动的内容二次创作助手，基于LangGraph Agent架构，支持多平台内容分析、视频转文字、爆款元素拆解和二创灵感生成.
+- 🤖 **MediaCrawlerPro-ContentRemixAgent**: AI驱动的内容分析Agent，基于LangGraph Agent架构，支持多平台内容解析、视频转文字、爆款元素拆解和分析报告生成.
 - 🎨 **PicTacticAgent**: AI智能图片生成工具，支持 OpenClaw / Claude Code Skill 集成，基于LangGraph多轮迭代工作流，内置199条精选模板库，告别文生图"抽卡".
 
 ### MediaCrawlerPro-ContentRemixAgent UI截图
-> AI驱动的内容二次创作助手，支持多平台内容分析、爆款元素拆解
+> AI驱动的内容分析Agent，支持多平台内容解析、爆款元素拆解
 
 <table>
   <tr>
@@ -162,7 +161,6 @@ MediaCrawlerPro 支持以 **Skill** 的形式安装到 AI Coding Agent 中，让
 - [x] 账号池管理 & 支持excel和mysql两种方式
 - [x] 小红书爬虫重构
 - [x] 微博爬虫重构
-- [x] 百度贴吧爬虫重构
 - [x] B站爬虫重构
 - [x] 抖音爬虫重构
 - [x] 快手爬虫重构

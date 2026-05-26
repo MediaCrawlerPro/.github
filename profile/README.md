@@ -1,23 +1,11 @@
 ## 免责声明
-> 本项目的所有内容仅供学习和参考之用，禁止用于商业用途。任何人或组织不得将本仓库的内容用于非法用途或侵犯他人合法权益。
+> 本项目的所有源代码内容仅供个人学习和参考之用，禁止用于任何商业用途。任何人或组织不得将本仓库的内容用于非法用途或侵犯他人合法权益。
 > 
 > 点击查看更为详细的免责声明。[点击跳转](#disclaimer)
 
 **📌 快速导航：** [项目介绍](#项目介绍) · [AI Agent Skill](#-ai-agent-skill-安装openclaw---claude-code) · [功能列表](#功能列表) · [获取访问权限](#获取pro版本的访问权限) · [仓库列表](#pro源代码仓库学习列表) · [更新日志](#更新日志)
 
-## MediaCrawler Pro版本诞生的背景
-[MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)这个项目开源至今获得了大量的关注，同时也暴露出来了一系列问题，比如：
-- 能否支持多账号？
-- 能否支持断点续爬？
-- 能否在linux部署？
-- 能否去掉playwright的依赖？
-- 有没有更简单的部署方法？
-- 有没有针对新手上门槛更低的方法？
-
-诸如上面的此类问题，想要在原有项目上去动刀，无疑是增加了复杂度，可能导致后续的维护更加困难。
-出于可持续维护、简便易用、部署简单等目的，对MediaCrawler进行彻底重构。
-
-## 项目介绍
+## MediaCrawler Pro项目介绍
 ### [MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)的Pro版本python实现
 **小红书爬虫**，**抖音爬虫**， **快手爬虫**， **B站爬虫**， **微博爬虫**，**知乎爬虫**...。
 
@@ -31,13 +19,14 @@
 - 支持多个平台的首页信息流推荐（HomeFeed）
 - 支持多个平台的热搜榜单爬取。
 
-### 🤖 AI Agent Skill 安装（OpenClaw 🦞 / Claude Code）
+### 🤖 AI Agent Skill 安装（OpenClaw 🦞 / Claude Code / Codex）
 
-MediaCrawlerPro 支持以 **Skill** 的形式安装到 AI Coding Agent 中，让 Agent 具备自媒体数据爬取能力，对 Agent 说句话就能自动爬取数据。
+MediaCrawlerPro的cli能力支持以 **Skill** 的形式安装到 AI Coding Agent 中，让 Agent 具备自媒体数据爬取能力，对 Agent 说句话就能自动爬取数据。
 
 支持的 Agent 平台：
 - **[OpenClaw](https://openclaw.ai/) 🦞** — 一键安装 Skill
 - **Claude Code** — 复制到 `~/.claude/skills/` 目录
+- **Codex** — 复制到 `~/.codex/skills/` 目录
 - **Cursor / Windsurf** — 复制到项目规则目录
 
 <details>

@@ -79,21 +79,17 @@ MediaCrawlerPro的cli能力支持以 **Skill** 的形式安装到 AI Coding Agen
 > 代码设计拓展性强，可以自己扩展更多的爬虫平台，更多的数据存储方式，相信对你架构这种爬虫代码有所帮助。
 
 扫描下方我的个人微信，备注：pro版本
-> 如果两个微信扫码都显示频繁添加的话，可以尝试通过搜索微信号：relakkes、relakkes2 这两个都可以
+> 如果两个微信扫码都显示频繁添加的话，可以尝试通过搜索微信号：nmcode、relakkes 这两个都可以
 
 <table>
   <tr>
     <td align="center">
-      <img alt="relakkes_wechat" src="../relakkes_weichat.JPG" width="200"><br>
+      <img alt="nmcode_wechat" src="../nmcode_wechat.jpg" width="200"><br>
       <b>个人微信</b>
     </td>
     <td align="center">
-      <img alt="个人微信2" src="../weichat3.jpg" width="200"><br>
+      <img alt="relakkes_wechat" src="../relakkes_weichat.JPG" width="200"><br>
       <b>个人微信2（备用）</b>
-    </td>
-    <td align="center">
-      <img alt="企业微信" src="../QIWEI.png" width="200"><br>
-      <b>企业微信（备用）</b>
     </td>
   </tr>
 </table>

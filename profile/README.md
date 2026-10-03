@@ -7,17 +7,17 @@
 
 ## MediaCrawler Pro项目介绍
 ### [MediaCrawler](https://github.com/NanmiCoder/MediaCrawler)的Pro版本python实现
-**小红书爬虫**，**抖音爬虫**， **快手爬虫**， **B站爬虫**， **微博爬虫**，**知乎爬虫**...。
+**小红书爬虫**，**抖音爬虫**，**快手爬虫**，**B站爬虫**，**微博爬虫**，**知乎爬虫**，**贴吧爬虫**，**Reddit爬虫**...。
 
-支持多种平台的爬虫，支持多种数据的爬取，支持多种数据的存储，最重要的**完美支持多账号+IP代理池，让你的爬虫更加稳定**。
+支持多平台、多种数据的爬取与存储，最重要的是**完美支持多账号+IP代理池，让你的爬虫更加稳定**。
 相较于MediaCrawler，Pro版本最大的变化：
-- 增加断点续爬的功能，恢复上次爬取的进度。
-- 多账号+IP代理池的支持，让爬虫更加稳定。
-- 去掉了playwright的依赖，不再将Playwright集成到爬虫主干中，依赖过重。
+- 增加断点续爬，可以恢复上次爬取的进度。
+- 支持多账号+IP代理池，让爬虫更加稳定。
+- 去掉 Playwright 依赖，爬虫主干更轻量。
 - 新增签名服务，解耦签名逻辑，让爬虫更加灵活。
-- 新增自媒体平台视频下载器桌面端UI下载项目（适合全栈项目学习）。
-- 支持多个平台的首页信息流推荐（HomeFeed）
-- 支持多个平台的热搜榜单爬取。
+- 支持多个平台的首页信息流推荐（HomeFeed）和热搜榜单爬取。
+- 新增自媒体视频下载器桌面端（适合学习全栈开发）。
+- 附赠多个 AI Agent 项目源码：内容拆解、图片生成、评论分析。
 
 ### 🤖 AI Agent Skill 安装（OpenClaw 🦞 / Claude Code / Codex）
 
@@ -30,7 +30,7 @@ MediaCrawlerPro的cli能力支持以 **Skill** 的形式安装到 AI Coding Agen
 - **Cursor / Windsurf** — 复制到项目规则目录
 
 <details>
-<summary><b>🆕 新上线：ContentRemixAgent - AI内容分析Agent</b></summary>
+<summary><b>🤖 附赠：ContentRemixAgent - AI内容分析Agent</b></summary>
 
 基于 **LangGraph Agent** 架构的内容分析工具，帮助创作者快速分析爆款内容、提取创作灵感。
 
@@ -58,6 +58,21 @@ MediaCrawlerPro的cli能力支持以 **Skill** 的形式安装到 AI Coding Agen
 技术栈：FastAPI + LangGraph + React 19 + TailwindCSS 4，支持 Web / CLI / Skill 三种使用方式
 </details>
 
+<details>
+<summary><b>🆕 新上线：VoxAgent - AI评论分析Agent</b></summary>
+
+输入关键词、博主主页或内容链接，自动调用 MediaCrawlerPro 采集评论，由大模型逐条标注，再由程序统计并生成研究报告。
+
+核心功能：
+- **三种研究入口**：关键词、博主主页、单条内容链接，支持 B站、小红书、抖音、Reddit
+- **逐条标注**：情绪、意图、立场、讨论方面
+- **结论可核对**：报告里的数字由程序统计，每段结论都能回到原评论
+- **断点继续**：研究可随时暂停，从已保存的进度继续，已完成的标注不重复计费
+- **报告导出**：HTML、Markdown、PDF
+
+技术栈：Python + TypeScript（Fastify + React），模型调用基于 Pi Agent，支持 DeepSeek、Kimi、智谱 GLM、通义千问、Claude、OpenAI 等模型
+</details>
+
 ## 功能列表
 | 平台 | 断点续爬 | 关键词搜索 | 指定帖子ID爬取 | 二级评论 | 创作者主页 | 首页推荐信息流 |账号池+IP代理池 | 热搜 |
 |----|------|-------|----------|------|-------|--------|-----------|----|
@@ -72,11 +87,11 @@ MediaCrawlerPro的cli能力支持以 **Skill** 的形式安装到 AI Coding Agen
 
 
 ## 获取Pro版本的访问权限
-> 如果感兴趣可以加我微信，订阅Pro版本访问权限哦，有门槛💰。<br>
+> 如果感兴趣可以加我微信，订阅Pro版本访问权限，有门槛💰。订阅后可以访问下方仓库列表中全部项目的源代码。<br>
 > 
 > ⚠️⚠️仅针对个人想学习Pro版本源码实现的用户，如果是公司或者商业化盈利性质的就不要加我了，谢谢🙏
 > 
-> 代码设计拓展性强，可以自己扩展更多的爬虫平台，更多的数据存储方式，相信对你架构这种爬虫代码有所帮助。
+> 代码设计扩展性强，可以自行扩展更多爬虫平台和数据存储方式，适合学习爬虫项目的架构设计。
 
 扫描下方我的个人微信，备注：pro版本
 > 如果两个微信扫码都显示频繁添加的话，可以尝试通过搜索微信号：nmcode、relakkes 这两个都可以
@@ -103,6 +118,7 @@ MediaCrawlerPro的cli能力支持以 **Skill** 的形式安装到 AI Coding Agen
 - 🛠️ **MediaCrawlerPro-Golang**: Golang语言版本，目前实现了最基本的xhs流程，开发中 .
 - 🤖 **MediaCrawlerPro-ContentRemixAgent**: AI驱动的内容分析Agent，基于LangGraph Agent架构，支持多平台内容解析、视频转文字、爆款元素拆解和分析报告生成.
 - 🎨 **PicTacticAgent**: AI智能图片生成工具，支持 OpenClaw / Claude Code Skill 集成，基于LangGraph多轮迭代工作流，内置199条精选模板库，告别文生图"抽卡".
+- 💬 **MediaCrawlerPro-VoxAgent**: 🆕 AI评论分析Agent，输入关键词或链接，自动采集评论、逐条标注，生成可回到原评论核对的研究报告.
 
 ### MediaCrawlerPro-ContentRemixAgent UI截图
 > AI驱动的内容分析Agent，支持多平台内容解析、爆款元素拆解
@@ -142,6 +158,16 @@ MediaCrawlerPro的cli能力支持以 **Skill** 的形式安装到 AI Coding Agen
   </tr>
 </table>
 
+### MediaCrawlerPro-VoxAgent 评论分析截图
+> 采集评论、逐条标注、生成研究报告，结论可以回到原评论核对
+
+<table>
+  <tr>
+    <td><img src="voxagent_report.png" alt="研究报告：样本规模、情绪分布与主要讨论方面" width="400"></td>
+    <td><img src="voxagent_evidence.png" alt="原文样本库：搜索并筛选报告引用的原评论" width="400"></td>
+  </tr>
+</table>
+
 
 ## 更新日志
 - [x] 账号池管理 & 支持excel和mysql两种方式
@@ -158,7 +184,12 @@ MediaCrawlerPro的cli能力支持以 **Skill** 的形式安装到 AI Coding Agen
 - [x] 知乎支持爬取一个问答下的所有回答
 - [x] MediaCrawlerPro-Downloader视频下载器开发完成
 - [x] 知乎支持断点续爬
-- [ ] MediaCrawlerPro-AI功能开发
+- [x] AI内容分析Agent（ContentRemixAgent）
+- [x] AI Agent Skill 支持 & CookieBridge Cookie自动同步
+- [x] AI图片生成Agent（PicTacticAgent）
+- [x] 多平台热搜榜单爬取
+- [x] Reddit 爬虫支持
+- [x] AI评论分析Agent（VoxAgent）
 
 
 
